@@ -1,0 +1,10 @@
+node {
+    
+     
+    docker.image('pbadhe34/apps:login').withRun('-p 8080:8080') { c ->
+        
+        sh 'sleep 5'
+        
+        sh 'curl http://localhost:8080/Login'
+    }
+ }
