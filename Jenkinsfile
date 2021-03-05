@@ -5,7 +5,7 @@ pipeline {
     dockerfile {
         filename 'Dockerfile-login'
         dir '.'
-        label 'login-app'
+        label 'master'
         additionalBuildArgs  '--build-arg version=1.0.2'
         args '-v /tmp:/tmp'
     }
